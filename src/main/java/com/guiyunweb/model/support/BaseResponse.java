@@ -2,7 +2,6 @@ package com.guiyunweb.model.support;
 
 import com.google.gson.Gson;
 import lombok.Data;
-import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
  * @author Guiyun

@@ -8,9 +8,9 @@ import lombok.Data;
 @Data
 public class Test {
 
+    private String title;
+
     public Test(String title) {
         this.title = title;
     }
-
-    private String title;
 }

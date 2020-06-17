@@ -7,16 +7,14 @@ import com.guiyunweb.model.entity.PostsUsers;
  */
 public class LoginVo {
 
+    private String id;
+    private String username;
+    private String token;
+
     public LoginVo(PostsUsers users) {
         setId(users.getId());
         setUsername(users.getUsername());
     }
-
-    private String id;
-
-    private String username;
-
-    private String token;
 
     public String getId() {
         return id;

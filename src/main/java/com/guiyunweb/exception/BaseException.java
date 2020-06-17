@@ -6,6 +6,7 @@ import org.springframework.lang.Nullable;
 
 /**
  * 项目基本异常
+ *
  * @author wnkj
  */
 public abstract class BaseException extends RuntimeException {

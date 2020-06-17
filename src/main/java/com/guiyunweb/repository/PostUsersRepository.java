@@ -8,10 +8,11 @@ import org.springframework.stereotype.Repository;
  * @author wnkj
  */
 @Repository
-public interface PostUsersRepository extends MongoRepository<PostsUsers,String> {
+public interface PostUsersRepository extends MongoRepository<PostsUsers, String> {
 
     /**
-     *  wae
+     * wae
+     *
      * @param username
      * @return
      */

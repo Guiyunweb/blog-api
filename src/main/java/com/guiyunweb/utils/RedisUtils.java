@@ -1,7 +1,5 @@
 package com.guiyunweb.utils;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.google.gson.Gson;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Repository;
@@ -15,10 +13,9 @@ import java.util.concurrent.TimeUnit;
 @Repository
 public class RedisUtils {
 
+    private static final Long TIME = 30L;
     @Autowired
     StringRedisTemplate stringRedisTemplate;
-
-    private static Long TIME = 30L;
 
     public void add(String key, Object obj) {
         stringRedisTemplate.opsForValue().set(key, JsonUtils.toJSONString(obj), TIME, TimeUnit.MINUTES);

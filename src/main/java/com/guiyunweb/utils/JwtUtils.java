@@ -38,7 +38,7 @@ public class JwtUtils {
             map.put("alg", "HS256");
             map.put("typ", "JWT");
             Date nowDate = new Date();
-            String token = JWT.create().withHeader(map).withIssuer("SERVICE").withSubject(new Gson().toJson(obj)).withAudience(new String[]{id}).withIssuedAt(nowDate).sign(algorithm);
+            String token = JWT.create().withHeader(map).withIssuer("SERVICE").withSubject(new Gson().toJson(obj)).withAudience(id).withIssuedAt(nowDate).sign(algorithm);
             return "bearer " + token;
         } catch (JWTCreationException var7) {
             var7.printStackTrace();
@@ -52,7 +52,7 @@ public class JwtUtils {
             JWTVerifier verifier = getVerifier();
             DecodedJWT jwt = verifier.verify(token.replace(PREFIX, ""));
             List<String> audience = jwt.getAudience();
-            return (String)audience.get(0);
+            return audience.get(0);
         } catch (Exception var4) {
             return null;
         }

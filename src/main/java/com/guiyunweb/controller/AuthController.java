@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 /**
  * 认证控制器
+ *
  * @author wnkj
  */
 @RestController
@@ -20,12 +21,12 @@ public class AuthController {
     AuthService service;
 
     @RequestMapping("/login")
-    public LoginVo login(@RequestBody PostsUsers users){
+    public LoginVo login(@RequestBody PostsUsers users) {
         return service.login(users);
     }
 
     @RequestMapping("/registered")
-    public LoginVo registered(@RequestBody PostsUsers users){
+    public LoginVo registered(@RequestBody PostsUsers users) {
         return service.registered(users);
     }
 

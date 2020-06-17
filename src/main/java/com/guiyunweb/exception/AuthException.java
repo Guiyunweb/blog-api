@@ -4,9 +4,10 @@ import org.springframework.http.HttpStatus;
 
 /**
  * 认证错误
+ *
  * @author wnkj
  */
-public class AuthException extends BaseException{
+public class AuthException extends BaseException {
 
     public AuthException(String message) {
         super(message);

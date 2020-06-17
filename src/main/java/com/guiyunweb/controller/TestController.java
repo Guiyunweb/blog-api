@@ -1,6 +1,5 @@
 package com.guiyunweb.controller;
 
-import com.guiyunweb.exception.AuthException;
 import com.guiyunweb.model.Test;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -12,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class TestController {
 
     @RequestMapping("/")
-    public Test hello(){
+    public Test hello() {
         return new Test("sss");
     }
 }

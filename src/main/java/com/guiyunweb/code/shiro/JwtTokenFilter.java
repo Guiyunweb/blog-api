@@ -20,15 +20,16 @@ import java.io.IOException;
 
 /**
  * jwt过滤器
+ *
  * @author Guiyun
  */
 
 @Component
 public class JwtTokenFilter extends BasicHttpAuthenticationFilter {
 
-    private Logger log = LoggerFactory.getLogger(this.getClass());
-
     private static final String TOKEN = "X-Token";
+    private final Logger log = LoggerFactory.getLogger(this.getClass());
+
     /**
      * 过滤器
      */
@@ -38,7 +39,7 @@ public class JwtTokenFilter extends BasicHttpAuthenticationFilter {
         Ini ini = Ini.fromResourcePath("classpath:shiro.ini");
         Ini.Section section = ini.getSection(IniFilterChainResolverFactory.URLS);
         log.info(httpServletRequest.getRequestURI());
-        if (section.containsKey(httpServletRequest.getRequestURI())){
+        if (section.containsKey(httpServletRequest.getRequestURI())) {
             return true;
         }
         return super.isAccessAllowed(request, response, mappedValue);

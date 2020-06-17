@@ -1,4 +1,4 @@
-package com.guiyunweb.model;
+package com.guiyunweb.model.entity;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.annotation.Transient;
@@ -9,7 +9,7 @@ import java.util.Date;
 /**
  * @author wnkj
  */
-@Document
+@Document(value = "post_name")
 public class PostsUsers {
 
     @Id

@@ -1,7 +1,13 @@
 package com.guiyunweb.utils;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.google.gson.Gson;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Repository;
+import org.springframework.util.StringUtils;
+
+import java.util.concurrent.TimeUnit;
 
 /**
  * @author wnkj
@@ -11,30 +17,33 @@ public class RedisUtils {
 
     @Autowired
     StringRedisTemplate stringRedisTemplate;
+
     private static Long TIME = 30L;
 
     public void add(String key, Object obj) {
-        stringRedisTemplate.opsForValue().set(key, JSONObject.toJSONString(obj), TIME, TimeUnit.MINUTES);
+        stringRedisTemplate.opsForValue().set(key, JsonUtils.toJSONString(obj), TIME, TimeUnit.MINUTES);
     }
 
-    public void add(String key, Object obj,Long time) {
-        stringRedisTemplate.opsForValue().set(key, JSONObject.toJSONString(obj), time, TimeUnit.MINUTES);
+    public void add(String key, Object obj, Long time) {
+        stringRedisTemplate.opsForValue().set(key, JsonUtils.toJSONString(obj), time, TimeUnit.MINUTES);
     }
 
-    public JSONObject getJson(String key) {
-        String source = stringRedisTemplate.opsForValue().get(key);
-        if (!StringUtils.isEmpty(source)) {
-            return JSONObject.parseObject(source);
-        }
-        return null;
-    }
 
-    public String get(String key) {
+    public String getString(String key) {
         String source = stringRedisTemplate.opsForValue().get(key);
         if (!StringUtils.isEmpty(source)) {
             return source;
         }
         return null;
+    }
+
+    public <T> T get(String key, Class<T> tClass) {
+        String string = getString(key);
+        if (StringUtils.isEmpty(string)) {
+            return JsonUtils.parse(string, tClass);
+        } else {
+            return null;
+        }
     }
 
     public void delete(String key) {

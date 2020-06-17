@@ -25,7 +25,7 @@ public class ShiroConfig {
 
         Map<String, Filter> filters = new LinkedHashMap<>();
         //添加jwt过滤器
-        filters.put("jwt", new JWTTokenFilter());
+        filters.put("jwt", new JwtTokenFilter());
         shiroFilterFactoryBean.setFilters(filters);
 
         LinkedHashMap<String, String> filterChainDefinitionMap = new LinkedHashMap<>();

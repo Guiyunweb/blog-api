@@ -1,9 +1,16 @@
 package com.guiyunweb.model.vo;
 
+import com.guiyunweb.model.entity.PostsUsers;
+
 /**
  * @author wnkj
  */
 public class LoginVo {
+
+    public LoginVo(PostsUsers users) {
+        setId(users.getId());
+        setUsername(users.getUsername());
+    }
 
     private String id;
 

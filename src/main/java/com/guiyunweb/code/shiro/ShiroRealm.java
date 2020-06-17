@@ -1,9 +1,10 @@
 package com.guiyunweb.code.shiro;
 
 
-import com.guiyunweb.model.PostsUsers;
+import com.guiyunweb.model.entity.PostsUsers;
 import com.guiyunweb.repository.PostUsersRepository;
 import com.guiyunweb.utils.JwtUtils;
+import com.guiyunweb.utils.RedisUtils;
 import org.apache.shiro.authc.AuthenticationException;
 import org.apache.shiro.authc.AuthenticationInfo;
 import org.apache.shiro.authc.AuthenticationToken;
@@ -20,7 +21,7 @@ import org.springframework.util.StringUtils;
 public class ShiroRealm extends AuthorizingRealm {
 
     @Autowired
-    RedisCache redisCache;
+    RedisUtils redisUtils;
 
     @Autowired
     PostUsersRepository usersRepository;
@@ -46,7 +47,7 @@ public class ShiroRealm extends AuthorizingRealm {
             throw new AuthenticationException("token校验不通过");
         }
 
-        PostsUsers postsUsers = redisCache.getCacheObject(id);
+        PostsUsers postsUsers = redisUtils.get(id,PostsUsers.class);
         if (postsUsers == null) {
             throw new AuthenticationException("账户未登录或已过期");
         }

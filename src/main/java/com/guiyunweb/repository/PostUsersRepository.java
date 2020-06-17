@@ -1,7 +1,6 @@
 package com.guiyunweb.repository;
 
-import com.guiyunweb.model.PostsUsers;
-import com.guiyunweb.project.domain.PostsUsers;
+import com.guiyunweb.model.entity.PostsUsers;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 

@@ -1,6 +1,6 @@
 package com.guiyunweb.model.support;
 
-import com.google.gson.Gson;
+import com.guiyunweb.utils.JsonUtils;
 import lombok.Data;
 
 /**
@@ -28,24 +28,24 @@ public class BaseResponse<T> {
         this.message = message;
     }
 
-    public static <T> BaseResponse<T> success(T data){
-        return new BaseResponse<T>(true,data,"请求成功");
+    public static <T> BaseResponse<T> success(T data) {
+        return new BaseResponse<T>(true, data, "请求成功");
     }
 
-    public static <T> BaseResponse<T> success(String message){
-        return new BaseResponse<T>(true,null,message);
+    public static <T> BaseResponse<T> success(String message) {
+        return new BaseResponse<T>(true, null, message);
     }
 
-    public static <T> BaseResponse<T> success(T data,String message){
-        return new BaseResponse<T>(true,data,message);
+    public static <T> BaseResponse<T> success(T data, String message) {
+        return new BaseResponse<T>(true, data, message);
     }
 
-    public static <T> BaseResponse<T> error(String message){
-        return new BaseResponse<T>(false,null,message);
+    public static <T> BaseResponse<T> error(String message) {
+        return new BaseResponse<T>(false, null, message);
     }
 
     @Override
     public String toString() {
-        return new Gson().toJson(this);
+        return JsonUtils.toJSONString(this);
     }
 }

@@ -28,8 +28,9 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-data-mongodb'
 	implementation 'org.springframework.boot:spring-boot-starter-freemarker'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework.boot:spring-boot-starter-data-redis'
 	implementation 'com.google.code.gson:gson:2.8.6'
-
+	implementation 'org.apache.commons:commons-pool2:2.8.0'
 	implementation 'org.apache.shiro:shiro-spring:1.5.3'
 	implementation 'com.auth0:java-jwt:3.8.3'
 	annotationProcessor 'org.projectlombok:lombok'

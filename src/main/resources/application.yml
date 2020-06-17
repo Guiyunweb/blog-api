@@ -9,21 +9,21 @@ spring:
       database: post
       password:
   redis:
-    # ��ַ
+    # 地址
     host: 47.100.105.136
-    # �˿ڣ�Ĭ��Ϊ6379
+    # 端口，默认为6379
     port: 6379
-    # ����
+    # 密码
     password:
-    # ���ӳ�ʱʱ��
+    # 连接超时时间
     timeout: 10s
     lettuce:
       pool:
-        # ���ӳ��е���С��������
+        # 连接池中的最小空闲连接
         min-idle: 0
-        # ���ӳ��е�����������
+        # 连接池中的最大空闲连接
         max-idle: 8
-        # ���ӳص�������ݿ�������
+        # 连接池的最大数据库连接数
         max-active: 8
-        # #���ӳ���������ȴ�ʱ�䣨ʹ�ø�ֵ��ʾû�����ƣ�
+        # #连接池最大阻塞等待时间（使用负值表示没有限制）
         max-wait: -1ms

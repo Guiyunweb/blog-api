@@ -1,7 +1,7 @@
 package com.guiyunweb.controller;
 
 import com.guiyunweb.model.entity.PostsUsers;
-import com.guiyunweb.model.vo.LoginVo;
+import com.guiyunweb.model.vo.LoginVO;
 import com.guiyunweb.service.AuthService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -21,12 +21,12 @@ public class AuthController {
     AuthService service;
 
     @RequestMapping("/login")
-    public LoginVo login(@RequestBody PostsUsers users) {
+    public LoginVO login(@RequestBody PostsUsers users) {
         return service.login(users);
     }
 
     @RequestMapping("/registered")
-    public LoginVo registered(@RequestBody PostsUsers users) {
+    public LoginVO registered(@RequestBody PostsUsers users) {
         return service.registered(users);
     }
 

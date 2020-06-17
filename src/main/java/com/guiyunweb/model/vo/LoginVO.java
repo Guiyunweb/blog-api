@@ -5,15 +5,18 @@ import com.guiyunweb.model.entity.PostsUsers;
 /**
  * @author wnkj
  */
-public class LoginVo {
+public class LoginVO {
 
     private String id;
     private String username;
     private String token;
 
-    public LoginVo(PostsUsers users) {
+    private PostsUsers users;
+
+    public LoginVO(PostsUsers users) {
         setId(users.getId());
         setUsername(users.getUsername());
+        setUsers(users);
     }
 
     public String getId() {
@@ -38,5 +41,13 @@ public class LoginVo {
 
     public void setToken(String token) {
         this.token = token;
+    }
+
+    public PostsUsers getUsers() {
+        return users;
+    }
+
+    public void setUsers(PostsUsers users) {
+        this.users = users;
     }
 }

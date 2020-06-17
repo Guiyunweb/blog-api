@@ -1,13 +1,13 @@
 package com.guiyunweb.service;
 
 import com.guiyunweb.model.entity.PostsUsers;
-import com.guiyunweb.model.vo.LoginVo;
+import com.guiyunweb.model.vo.LoginVO;
 
 /**
  * @author wnkj
  */
 public interface AuthService {
-    LoginVo login(PostsUsers users);
+    LoginVO login(PostsUsers users);
 
-    LoginVo registered(PostsUsers users);
+    LoginVO registered(PostsUsers users);
 }

@@ -34,6 +34,8 @@ dependencies {
 	implementation 'org.apache.shiro:shiro-spring:1.5.3'
 	implementation 'com.auth0:java-jwt:3.8.3'
 	implementation 'com.github.oshi:oshi-core:5.1.2'
+	implementation 'com.squareup.okhttp3:okhttp:4.7.2'
+
 
 	annotationProcessor 'org.projectlombok:lombok'
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'

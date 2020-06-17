@@ -33,6 +33,7 @@ public class PostsUsers {
 
     private String about;
 
+    private String avatar;
 
     @Transient
     private String token;
@@ -115,5 +116,13 @@ public class PostsUsers {
 
     public void setId(String id) {
         this.id = id;
+    }
+
+    public String getAvatar() {
+        return avatar;
+    }
+
+    public void setAvatar(String avatar) {
+        this.avatar = avatar;
     }
 }

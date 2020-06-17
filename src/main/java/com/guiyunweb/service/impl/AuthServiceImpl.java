@@ -2,7 +2,7 @@ package com.guiyunweb.service.impl;
 
 import com.guiyunweb.exception.AuthException;
 import com.guiyunweb.model.entity.PostsUsers;
-import com.guiyunweb.model.vo.LoginVo;
+import com.guiyunweb.model.vo.LoginVO;
 import com.guiyunweb.repository.PostUsersRepository;
 import com.guiyunweb.service.AuthService;
 import com.guiyunweb.utils.JwtUtils;
@@ -25,7 +25,7 @@ public class AuthServiceImpl implements AuthService {
     RedisUtils redisUtils;
 
     @Override
-    public LoginVo login(PostsUsers users) {
+    public LoginVO login(PostsUsers users) {
         if (ObjectUtils.isEmpty(users)) {
             throw new AuthException("用户名或密码不能为空");
         }
@@ -37,7 +37,7 @@ public class AuthServiceImpl implements AuthService {
         }
         PostsUsers postsUsers = repository.findByUsername(users.getUsername());
         if ((!ObjectUtils.isEmpty(postsUsers)) && (postsUsers.getPassword().equals(users.getPassword()))) {
-            LoginVo vo = new LoginVo(postsUsers);
+            LoginVO vo = new LoginVO(postsUsers);
             vo.setToken(JwtUtils.createToken(vo.getId(), vo));
             redisUtils.add(vo.getId(), vo);
             return vo;
@@ -48,7 +48,7 @@ public class AuthServiceImpl implements AuthService {
 
 
     @Override
-    public LoginVo registered(PostsUsers users) {
+    public LoginVO registered(PostsUsers users) {
         if (ObjectUtils.isEmpty(users)) {
             throw new AuthException("用户名或密码不能为空");
         }

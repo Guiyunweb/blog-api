@@ -13,9 +13,6 @@ public class TestController {
 
     @RequestMapping("/")
     public Test hello(){
-        if (true) {
-            throw new AuthException("未认证");
-        }
         return new Test("sss");
     }
 }

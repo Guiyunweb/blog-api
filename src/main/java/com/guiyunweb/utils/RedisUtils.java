@@ -39,7 +39,7 @@ public class RedisUtils {
 
     public <T> T get(String key, Class<T> tClass) {
         String string = getString(key);
-        if (StringUtils.isEmpty(string)) {
+        if (!StringUtils.isEmpty(string)) {
             return JsonUtils.parse(string, tClass);
         } else {
             return null;

@@ -2,6 +2,7 @@ package com.guiyunweb.code.shiro;
 
 
 import com.guiyunweb.model.entity.PostsUsers;
+import com.guiyunweb.model.vo.LoginVo;
 import com.guiyunweb.repository.PostUsersRepository;
 import com.guiyunweb.utils.JwtUtils;
 import com.guiyunweb.utils.RedisUtils;
@@ -47,11 +48,11 @@ public class ShiroRealm extends AuthorizingRealm {
             throw new AuthenticationException("token校验不通过");
         }
 
-        PostsUsers postsUsers = redisUtils.get(id,PostsUsers.class);
-        if (postsUsers == null) {
+        LoginVo vo = redisUtils.get(id,LoginVo.class);
+        if (vo == null) {
             throw new AuthenticationException("账户未登录或已过期");
         }
-        if (!token.equals(postsUsers.getToken())) {
+        if (!token.equals(vo.getToken())) {
             throw new AuthenticationException("token校验不通过");
         } else {
             return new SimpleAuthenticationInfo(id, token, getName());

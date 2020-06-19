@@ -26,6 +26,6 @@ public class PostArticle {
 
     private String comments;
 
-
+    private boolean isRelease;
 
 }

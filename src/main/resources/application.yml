@@ -7,7 +7,9 @@ spring:
       host: 47.100.105.136
       port: 27017
       database: post
-      password:
+      password: mengyuanyun
+      username: guiyun
+      authentication-database: admin
   redis:
     # 地址
     host: 47.100.105.136

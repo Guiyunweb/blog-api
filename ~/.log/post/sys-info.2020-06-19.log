@@ -1,0 +1,83 @@
+14:38:01.100 [restartedMain] INFO  c.g.AppApplication - [logStarting,55] - Starting AppApplication on DESKTOP-0273LPG with PID 4404 (D:\home\git\app\out\production\classes started by Guiyun in D:\home\git\app)
+14:38:01.106 [restartedMain] INFO  c.g.AppApplication - [logStartupProfileInfo,651] - No active profile set, falling back to default profiles: default
+14:38:08.510 [restartedMain] INFO  o.m.driver.cluster - [info,71] - Cluster created with settings {hosts=[47.100.105.136:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+14:38:08.954 [cluster-ClusterId{value='5eec5d50950c2a74dc5278d7', description='null'}-47.100.105.136:27017] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:1, serverValue:74}] to 47.100.105.136:27017
+14:38:09.008 [cluster-ClusterId{value='5eec5d50950c2a74dc5278d7', description='null'}-47.100.105.136:27017] INFO  o.m.driver.cluster - [info,71] - Monitor thread successfully connected to server with description ServerDescription{address=47.100.105.136:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=48738800}
+14:38:10.239 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8866"]
+14:38:10.241 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+14:38:10.241 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.36]
+14:38:10.483 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+14:38:12.968 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8866"]
+14:38:13.051 [restartedMain] INFO  c.g.AppApplication - [logStarted,61] - Started AppApplication in 13.08 seconds (JVM running for 17.132)
+14:38:13.617 [RMI TCP Connection(3)-172.10.162.105] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:2, serverValue:75}] to 47.100.105.136:27017
+14:38:14.364 [RMI TCP Connection(5)-172.10.162.105] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+14:40:11.096 [http-nio-8866-exec-2] INFO  c.g.c.s.JwtTokenFilter - [isAccessAllowed,41] - /menu/add
+14:40:22.823 [http-nio-8866-exec-3] INFO  c.g.c.s.JwtTokenFilter - [isAccessAllowed,41] - /auth/login
+14:41:07.170 [http-nio-8866-exec-4] INFO  c.g.c.s.JwtTokenFilter - [isAccessAllowed,41] - /menu/add
+14:42:19.482 [http-nio-8866-exec-7] INFO  c.g.c.s.JwtTokenFilter - [isAccessAllowed,41] - /menu/add
+14:44:53.583 [SpringContextShutdownHook] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:2, serverValue:75}] to 47.100.105.136:27017 because the pool has been closed.
+14:45:11.803 [restartedMain] INFO  c.g.AppApplication - [logStarting,55] - Starting AppApplication on DESKTOP-0273LPG with PID 5536 (D:\home\git\app\out\production\classes started by Guiyun in D:\home\git\app)
+14:45:11.810 [restartedMain] INFO  c.g.AppApplication - [logStartupProfileInfo,651] - No active profile set, falling back to default profiles: default
+14:45:15.584 [restartedMain] INFO  o.m.driver.cluster - [info,71] - Cluster created with settings {hosts=[47.100.105.136:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+14:45:15.904 [cluster-ClusterId{value='5eec5efbcab174706e10112d', description='null'}-47.100.105.136:27017] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:1, serverValue:79}] to 47.100.105.136:27017
+14:45:15.951 [cluster-ClusterId{value='5eec5efbcab174706e10112d', description='null'}-47.100.105.136:27017] INFO  o.m.driver.cluster - [info,71] - Monitor thread successfully connected to server with description ServerDescription{address=47.100.105.136:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=44050100}
+14:45:16.824 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8866"]
+14:45:16.826 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+14:45:16.827 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.36]
+14:45:17.012 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+14:45:18.573 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8866"]
+14:45:18.636 [restartedMain] INFO  c.g.AppApplication - [logStarted,61] - Started AppApplication in 7.879 seconds (JVM running for 11.167)
+14:45:19.220 [RMI TCP Connection(2)-172.10.162.105] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+14:45:19.342 [RMI TCP Connection(3)-172.10.162.105] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:2, serverValue:80}] to 47.100.105.136:27017
+14:45:34.169 [http-nio-8866-exec-2] INFO  c.g.c.s.JwtTokenFilter - [isAccessAllowed,41] - /menu
+14:46:05.235 [http-nio-8866-exec-3] INFO  c.g.c.s.JwtTokenFilter - [isAccessAllowed,41] - /menu
+14:46:09.995 [http-nio-8866-exec-5] INFO  c.g.c.s.JwtTokenFilter - [isAccessAllowed,41] - /menu/add
+14:46:14.466 [http-nio-8866-exec-4] INFO  c.g.c.s.JwtTokenFilter - [isAccessAllowed,41] - /menu
+14:57:28.867 [http-nio-8866-exec-8] INFO  c.g.c.s.JwtTokenFilter - [isAccessAllowed,41] - /menu/add
+14:57:39.014 [http-nio-8866-exec-9] INFO  c.g.c.s.JwtTokenFilter - [isAccessAllowed,41] - /menu
+15:07:37.886 [http-nio-8866-exec-2] INFO  c.g.c.s.JwtTokenFilter - [isAccessAllowed,41] - /auth/login
+16:31:33.612 [SpringContextShutdownHook] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:2, serverValue:80}] to 47.100.105.136:27017 because the pool has been closed.
+16:31:58.293 [restartedMain] INFO  c.g.AppApplication - [logStarting,55] - Starting AppApplication on DESKTOP-0273LPG with PID 3856 (D:\home\git\app\out\production\classes started by Guiyun in D:\home\git\app)
+16:31:58.308 [restartedMain] INFO  c.g.AppApplication - [logStartupProfileInfo,651] - No active profile set, falling back to default profiles: default
+16:32:02.805 [restartedMain] INFO  o.m.driver.cluster - [info,71] - Cluster created with settings {hosts=[47.100.105.136:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+16:32:03.197 [cluster-ClusterId{value='5eec7802ef942d277bf006a1', description='null'}-47.100.105.136:27017] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:1, serverValue:81}] to 47.100.105.136:27017
+16:32:03.254 [cluster-ClusterId{value='5eec7802ef942d277bf006a1', description='null'}-47.100.105.136:27017] INFO  o.m.driver.cluster - [info,71] - Monitor thread successfully connected to server with description ServerDescription{address=47.100.105.136:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=51935500}
+16:32:04.551 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8866"]
+16:32:04.553 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+16:32:04.554 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.36]
+16:32:04.902 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+16:32:07.443 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8866"]
+16:32:07.521 [restartedMain] INFO  c.g.AppApplication - [logStarted,61] - Started AppApplication in 10.788 seconds (JVM running for 14.996)
+16:32:08.076 [RMI TCP Connection(1)-172.10.162.105] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:32:08.720 [RMI TCP Connection(3)-172.10.162.105] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:2, serverValue:82}] to 47.100.105.136:27017
+16:37:47.317 [http-nio-8866-exec-1] INFO  c.g.c.s.JwtTokenFilter - [isAccessAllowed,41] - /posts/add
+16:38:02.963 [http-nio-8866-exec-4] INFO  c.g.c.s.JwtTokenFilter - [isAccessAllowed,41] - /posts/add
+16:41:56.899 [http-nio-8866-exec-7] INFO  c.g.c.s.JwtTokenFilter - [isAccessAllowed,41] - /posts/add
+16:44:03.931 [http-nio-8866-exec-9] INFO  c.g.c.s.JwtTokenFilter - [isAccessAllowed,41] - /posts/add
+16:45:19.837 [http-nio-8866-exec-2] INFO  c.g.c.s.JwtTokenFilter - [isAccessAllowed,41] - /posts/add
+16:46:00.095 [http-nio-8866-exec-5] INFO  c.g.c.s.JwtTokenFilter - [isAccessAllowed,41] - /posts/add
+16:48:15.368 [http-nio-8866-exec-8] INFO  c.g.c.s.JwtTokenFilter - [isAccessAllowed,41] - /posts/add
+16:48:39.937 [http-nio-8866-exec-10] INFO  c.g.c.s.JwtTokenFilter - [isAccessAllowed,41] - /posts/add
+16:48:44.424 [http-nio-8866-exec-2] INFO  c.g.c.s.JwtTokenFilter - [isAccessAllowed,41] - /auth/login
+16:48:58.595 [http-nio-8866-exec-4] INFO  c.g.c.s.JwtTokenFilter - [isAccessAllowed,41] - /posts/add
+16:50:10.510 [http-nio-8866-exec-7] INFO  c.g.c.s.JwtTokenFilter - [isAccessAllowed,41] - /auth/login
+16:50:23.128 [http-nio-8866-exec-9] INFO  c.g.c.s.JwtTokenFilter - [isAccessAllowed,41] - /posts/add
+16:51:10.715 [http-nio-8866-exec-2] INFO  c.g.c.s.JwtTokenFilter - [isAccessAllowed,41] - /posts/add
+16:51:35.169 [http-nio-8866-exec-5] INFO  c.g.c.s.JwtTokenFilter - [isAccessAllowed,41] - /posts/add
+16:52:08.680 [http-nio-8866-exec-8] INFO  c.g.c.s.JwtTokenFilter - [isAccessAllowed,41] - /posts/save
+16:54:01.456 [SpringContextShutdownHook] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:2, serverValue:82}] to 47.100.105.136:27017 because the pool has been closed.
+16:54:21.591 [restartedMain] INFO  c.g.AppApplication - [logStarting,55] - Starting AppApplication on DESKTOP-0273LPG with PID 15352 (D:\home\git\app\out\production\classes started by Guiyun in D:\home\git\app)
+16:54:21.634 [restartedMain] INFO  c.g.AppApplication - [logStartupProfileInfo,651] - No active profile set, falling back to default profiles: default
+16:54:26.741 [restartedMain] INFO  o.m.driver.cluster - [info,71] - Cluster created with settings {hosts=[47.100.105.136:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+16:54:27.389 [cluster-ClusterId{value='5eec7d42b4710c01a329f070', description='null'}-47.100.105.136:27017] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:1, serverValue:86}] to 47.100.105.136:27017
+16:54:27.436 [cluster-ClusterId{value='5eec7d42b4710c01a329f070', description='null'}-47.100.105.136:27017] INFO  o.m.driver.cluster - [info,71] - Monitor thread successfully connected to server with description ServerDescription{address=47.100.105.136:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=44467000}
+16:54:28.197 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8866"]
+16:54:28.199 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+16:54:28.200 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.36]
+16:54:28.362 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+16:54:30.703 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8866"]
+16:54:30.767 [restartedMain] INFO  c.g.AppApplication - [logStarted,61] - Started AppApplication in 10.941 seconds (JVM running for 15.297)
+16:54:31.475 [RMI TCP Connection(1)-172.10.162.105] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:54:31.566 [RMI TCP Connection(2)-172.10.162.105] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:2, serverValue:87}] to 47.100.105.136:27017
+16:55:52.888 [http-nio-8866-exec-2] INFO  c.g.c.s.JwtTokenFilter - [isAccessAllowed,41] - /posts/save
+16:58:04.986 [http-nio-8866-exec-3] INFO  c.g.c.s.JwtTokenFilter - [isAccessAllowed,41] - /posts/save

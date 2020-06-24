@@ -29,4 +29,20 @@ public class PostsController {
         return serivce.getList(article,dto);
     }
 
+    @GetMapping("/getInfo")
+    public PostArticle getInfo(String id){
+        return serivce.getInfo(id);
+    }
+
+    @GetMapping("/del")
+    public BaseResponse del(PostArticle article){
+         serivce.del(article);
+         return BaseResponse.success("删除成功");
+    }
+
+    @GetMapping("/showList")
+    public Page<PostArticle> showList(PageDTO dto, PostArticle article){
+        return serivce.showList(article,dto);
+    }
+
 }

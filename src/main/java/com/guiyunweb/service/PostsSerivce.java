@@ -8,4 +8,10 @@ public interface PostsSerivce {
     void save(PostArticle article);
 
     Page<PostArticle> getList(PostArticle article, PageDTO dto);
+
+    PostArticle getInfo(String id);
+
+    void del(PostArticle article);
+
+    Page<PostArticle> showList(PostArticle article, PageDTO dto);
 }

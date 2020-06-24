@@ -36,4 +36,22 @@ public class PostsServiceImpl implements PostsSerivce {
         }
         return repository.findAll(dto.getPageable());
     }
+
+    @Override
+    public PostArticle getInfo(String id) {
+        return repository.findById(id).get();
+    }
+
+    @Override
+    public void del(PostArticle article) {
+        repository.delete(article);
+    }
+
+    @Override
+    public Page<PostArticle> showList(PostArticle article, PageDTO dto) {
+        if (ObjectUtils.isArray(dto)){
+            dto = new PageDTO();
+        }
+        return repository.findAllByRelease(true,dto.getPageable());
+    }
 }

@@ -56,7 +56,7 @@ public class PostArticle {
     /**
      * 是否发布
      */
-    private boolean isRelease;
+    private boolean issued;
 
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     private Date createTime;

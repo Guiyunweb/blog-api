@@ -52,6 +52,6 @@ public class PostsServiceImpl implements PostsSerivce {
         if (ObjectUtils.isArray(dto)){
             dto = new PageDTO();
         }
-        return repository.findAllByRelease(true,dto.getPageable());
+        return repository.findAllByIssued(true,dto.getPageable());
     }
 }

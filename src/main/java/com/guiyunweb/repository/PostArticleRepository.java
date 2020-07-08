@@ -13,5 +13,5 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface PostArticleRepository extends MongoRepository<PostArticle, String> {
 
-    Page<PostArticle> findAllByRelease(Boolean isRelease,Pageable pageable);
+    Page<PostArticle> findAllByIssued(Boolean isRelease,Pageable pageable);
 }

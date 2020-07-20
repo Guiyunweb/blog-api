@@ -29,3 +29,12 @@ spring:
         max-active: 8
         # #连接池最大阻塞等待时间（使用负值表示没有限制）
         max-wait: -1ms
+  servlet:
+    multipart:
+      max-file-size: -1
+      max-request-size: -1
+obs:
+  huawei:
+    ak: TSTPOQYY2JCI9BBHLIPW
+    sk: lchouQgxP84l2GVPwkSppLsdurvLCflbpw2kulvd
+    end-point: https://obs.cn-east-3.myhuaweicloud.com

@@ -34,6 +34,6 @@ public class PageDTO {
             setSize(10);
         }
         Sort sort = Sort.by(Sort.Direction.DESC, properties);
-        return PageRequest.of(getPage(),getSize());
+        return PageRequest.of(getPage(),getSize(),sort);
     }
 }

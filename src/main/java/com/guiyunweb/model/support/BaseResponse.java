@@ -32,6 +32,10 @@ public class BaseResponse<T> {
         return new BaseResponse<T>(true, data, "请求成功");
     }
 
+    public static BaseResponse  successString(String  data) {
+        return new BaseResponse(true, data, "请求成功");
+    }
+
     public static <T> BaseResponse<T> success(String message) {
         return new BaseResponse<T>(true, null, message);
     }

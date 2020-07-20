@@ -1,7 +1,7 @@
 package com.guiyunweb.repository;
 
 import com.guiyunweb.model.entity.PostArticle;
-import com.guiyunweb.model.entity.PostMenu;
+import com.guiyunweb.model.entity.PostLinks;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.mongodb.repository.MongoRepository;
@@ -13,7 +13,7 @@ import java.util.List;
  * @author wnkj
  */
 @Repository
-public interface PostArticleRepository extends MongoRepository<PostArticle, String> {
+public interface LinksRepository extends MongoRepository<PostLinks, String> {
 
-    Page<PostArticle> findByIssued(Boolean issued,Pageable pageable);
+    List<PostLinks> findByShow(Boolean show);
 }

@@ -4,6 +4,7 @@ import com.guiyunweb.model.dto.PageDTO;
 import com.guiyunweb.model.entity.PostArticle;
 import com.guiyunweb.model.support.BaseResponse;
 import com.guiyunweb.model.vo.ArchiveVO;
+import com.guiyunweb.model.vo.ShowArticleVO;
 import com.guiyunweb.service.PostsSerivce;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -44,7 +45,7 @@ public class PostsController {
     }
 
     @GetMapping("/showList")
-    public Page<PostArticle> showList(PageDTO dto, PostArticle article){
+    public Page<ShowArticleVO> showList(PageDTO dto, PostArticle article){
         return serivce.showList(article,dto);
     }
 

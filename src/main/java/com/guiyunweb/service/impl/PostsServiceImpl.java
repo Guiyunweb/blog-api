@@ -3,6 +3,7 @@ package com.guiyunweb.service.impl;
 import com.guiyunweb.model.dto.PageDTO;
 import com.guiyunweb.model.entity.PostArticle;
 import com.guiyunweb.model.vo.ArchiveVO;
+import com.guiyunweb.model.vo.ShowArticleVO;
 import com.guiyunweb.repository.PostArticleRepository;
 import com.guiyunweb.service.PostsSerivce;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -52,7 +53,7 @@ public class PostsServiceImpl implements PostsSerivce {
     }
 
     @Override
-    public Page<PostArticle> showList(PostArticle article, PageDTO dto) {
+    public Page<ShowArticleVO> showList(PostArticle article, PageDTO dto) {
         if (ObjectUtils.isArray(dto)) {
             dto = new PageDTO();
         }

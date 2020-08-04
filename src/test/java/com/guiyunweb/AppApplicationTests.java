@@ -17,13 +17,9 @@ import java.io.IOException;
 @SpringBootTest
 class AppApplicationTests {
 
-	@Autowired
-	MongoTemplate mongoTemplate;
-
 	@Test
 	void contextLoads() throws IOException {
-		String content = "Hello OBS";
-		ObsUtils.upload( new ByteArrayInputStream(content.getBytes()));
+
 	}
 
 }
